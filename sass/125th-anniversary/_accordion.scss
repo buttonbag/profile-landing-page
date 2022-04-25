@@ -1,0 +1,45 @@
+#page-accordion {
+	.accordion {
+		.card {
+			border-top: 1px solid $blue;
+			border-bottom: 1px solid $blue;
+			border-left: 0;
+			border-right: 0;
+
+			.card-header {
+				border: 0;
+				.btn {
+					font-size: 20px;
+					color: $blue;
+					font-weight: 700;
+					width: 100%;
+					&.collapsed {
+						&:after {
+							content: '';
+							background: url($image-path + 'caret.svg') no-repeat;
+							display: inline-block;
+							width: 16px;
+							height: 11px;
+							margin-left: 10px;
+							transform: rotate(180deg);
+							transition: all 0.2s;
+						}
+					}
+					&:after {
+						content: '';
+						background: url($image-path + 'caret.svg') no-repeat;
+						display: inline-block;
+						width: 16px;
+						height: 11px;
+						margin-left: 10px;
+						transform: rotate(0deg);
+						transition: all 0.2s;
+					}
+				}
+				button.btn.btn-link.text-left {
+					text-align: center !important;
+				}
+			}
+		}
+	}
+}

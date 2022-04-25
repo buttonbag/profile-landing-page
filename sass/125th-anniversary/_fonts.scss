@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'DIN Pro-Cond';
+	font-style: normal;
+	font-weight: 500;
+	src: url($font-path-din-pro-cond + 'DINPro-CondMedium.woff') format('woff'),
+		url($font-path-din-pro-cond + 'DINPro-CondMedium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'DIN Pro-Cond';
+	font-style: normal;
+	font-weight: 700;
+	src: url($font-path-din-pro-cond + 'DINPro-CondBold.woff') format('woff'),
+		url($font-path-din-pro-cond + 'DINPro-CondBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	src: url($font-path-din-pro + 'DINPro-Black.woff') format('woff'),
+		url($font-path-din-pro + 'DINPro-Black.otf') format('opentype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	src: url($font-path-din-pro + 'DINPro-Bold.woff') format('woff'),
+		url($font-path-din-pro + 'DINPro-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	src: url($font-path-din-pro + 'DINPro-Medium.woff') format('woff'),
+		url($font-path-din-pro + 'DINPro-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	src: url($font-path-din-pro + 'DINPro-Light.woff') format('woff'),
+		url($font-path-din-pro + 'DINPro-Light.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima-nova-condensed';
+	src: url($font-path-proxima-nova-cond + '3119EE_2_0.eot');
+	src: url($font-path-proxima-nova-cond + '3119EE_2_0.eot?#iefix')
+			format('embedded-opentype'),
+		url($font-path-proxima-nova-cond + '3119EE_2_0.woff2') format('woff2'),
+		url($font-path-proxima-nova-cond + '3119EE_2_0.woff') format('woff'),
+		url($font-path-proxima-nova-cond + '3119EE_2_0.ttf') format('truetype');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'proxima-nova-condensed';
+	src: url($font-path-proxima-nova-cond + '3119EE_5_0.eot');
+	src: url($font-path-proxima-nova-cond + '3119EE_5_0.eot?#iefix')
+			format('embedded-opentype'),
+		url($font-path-proxima-nova-cond + '3119EE_5_0.woff2') format('woff2'),
+		url($font-path-proxima-nova-cond + '3119EE_5_0.woff') format('woff'),
+		url($font-path-proxima-nova-cond + '3119EE_5_0.ttf') format('truetype');
+	font-weight: 400;
+}

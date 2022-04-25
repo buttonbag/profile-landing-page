@@ -1,0 +1,38 @@
+a {
+	&.btn,
+	&.cta-blue {
+		font-family: $font-heading;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 25px;
+		padding: 13px 30px;
+		align-items: center;
+		text-align: center;
+		text-transform: uppercase;
+
+		background: #0057b7 !important;
+		border-radius: 10px;
+		color: $white !important;
+
+		&:hover {
+			background: $blue-dark !important;
+		}
+
+		@media screen and (max-width: $breakpoint-md) {
+			font-size: 15px;
+			max-width: 260px;
+			height: 50px;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+		}
+
+		&.mobile-mt {
+			@media screen and (max-width: $breakpoint-md) {
+				margin: 1.5rem auto 0;
+			}
+		}
+	}
+}

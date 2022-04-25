@@ -1,0 +1,72 @@
+$blue: #0057b7;
+$blue-dark: #0e4174;
+$red: #af272f;
+$gray-dark: #565656;
+$white: #ffffff;
+
+$blue-accent: #0e4174;
+$blue-accent-dark: #083cba;
+
+$primary: $blue;
+$primary-mid: $white;
+$primary-light: $white;
+$primary-dark: $blue-dark;
+
+$body-bg: $white;
+$body-color: $gray-dark;
+
+$breakpoint-xl: 1199.98px;
+$breakpoint-lg: 991.98px;
+$breakpoint-md: 767.98px;
+$breakpoint-sm: 575.98px;
+$breakpoint-xs: 480px;
+
+$breakpoint-masthead-lg: 1075px;
+
+/* Production */
+$font-path-din-pro-cond: '/_layouts/15/DU.SPBaseLibs/css/webfonts/din-pro-condensed/';
+$font-path-din-pro: '/_layouts/15/DU.SPBaseLibs/css/webfonts/din-pro/';
+$font-path-proxima-nova-cond: '/_layouts/15/DU.SPBaseLibs/css/webfonts/Proxima-Nova-Condensed/';
+$image-path: '/13th-president/PublishingImages/';
+
+// Local: ../../fonts/
+// $font-path-din-pro-cond: '../../fonts/';
+// $font-path-din-pro: '../../fonts/';
+// $font-path-proxima-nova-cond: '../../fonts/';
+// $image-path: '../../images/';
+
+/***************************
+FONT OVERIDES
+****************************/
+
+$font-primary: 'DIN Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+//$headings-margin-bottom:      $spacer / 2 !default;
+$font-heading: $font-primary;
+$font-heading-weight: 700;
+$font-heading-line-height: 1.1;
+//$headings-color: inherit;
+
+// Custom variable for consensed heading font.
+$font-heading-condensed: $font-primary;
+
+/***************************
+FONT SIZES
+****************************/
+/*.theme-13th {
+    font-size: 10px;
+}
+
+$font-size-base: 1rem;
+// pulls in the 10px above - makes for easier math when making relative sizes
+
+
+$h1-font-size: $font-size-base * 6;
+$h2-font-size: $font-size-base * 4.8;
+$h3-font-size: $font-size-base * 2.8;
+$h4-font-size: $font-size-base * 2.6;
+$h5-font-size: $font-size-base * 2.1;
+//$h6-font-size:                $font-size-base;*/
+
+$txt-mobile-pad-x: 1.5rem;
+$txt-mobile-pad-y: 1.5rem;

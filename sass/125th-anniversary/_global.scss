@@ -1,0 +1,303 @@
+html {
+	background: $body-bg;
+}
+body div.theme-13th {
+	font-size: 1.25rem;
+	background: $white;
+	color: black;
+	// color: $gray-dark;
+	font-family: $font-primary;
+	font-weight: 400;
+	-moz-osx-font-smoothing: grayscale; /* Firefox */
+	-webkit-font-smoothing: antialiased; /* WebKit  */
+	@media screen and (max-width: $breakpoint-sm) {
+		font-size: calc(1.3rem * 0.8);
+	}
+}
+
+.theme-13th {
+	[id*='page-'] {
+		[class*='container'] {
+			margin-bottom: 5rem;
+		}
+	}
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $blue !important;
+		font-family: $font-heading;
+		font-weight: 700;
+		line-height: 1.1;
+		border: 0;
+		text-transform: uppercase;
+		span {
+			text-transform: none;
+		}
+	}
+
+	h1 {
+		font-size: 40px;
+		@media screen and (max-width: $breakpoint-sm) {
+			font-size: calc(40px * 0.8);
+		}
+	}
+	h2 {
+		font-size: 25px;
+		margin-bottom: 30px;
+		@media screen and (max-width: $breakpoint-sm) {
+			font-size: calc(25px * 0.8);
+		}
+	}
+
+	p {
+		margin-bottom: 1.5em;
+		line-height: 2rem;
+
+		@media screen and (max-width: $breakpoint-sm) {
+			margin-bottom: calc(1.5em * 0.8);
+			line-height: calc(2rem * 0.8);
+		}
+	}
+
+	a {
+		color: $primary;
+	}
+
+	#page-hero {
+		img {
+			max-width: 100%;
+		}
+
+		.hero-container {
+			position: relative;
+			background: url($image-path + 'hero-image.png') 0% center/cover no-repeat;
+			height: 785px;
+			overflow: hidden;
+			margin-bottom: 5rem;
+
+			@media screen and (max-width: $breakpoint-xl) {
+				margin-bottom: calc(200px + 2rem); //relates to .text-container top pos
+				overflow: visible;
+			}
+
+			@media screen and (max-width: $breakpoint-md) {
+				background: url($image-path + 'quote-pic.png') center/cover no-repeat;
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				margin-bottom: calc(230px + 2rem);
+				height: 350px;
+			}
+
+			.text-container {
+				background-color: white;
+				position: absolute;
+				width: 784px;
+				height: 473px;
+				left: 520px;
+				top: 200px;
+				padding: 75px;
+
+				h1 {
+					span {
+						color: $red;
+						font-size: 50%;
+						display: block;
+						margin: 0 auto 0.75rem;
+						@media screen and (max-width: $breakpoint-sm) {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			@media screen and (max-width: $breakpoint-xl) {
+				.text-container {
+					position: relative;
+					margin: 0 auto;
+					right: 0;
+					left: 0;
+					top: 550px;
+				}
+			}
+			@media screen and (max-width: $breakpoint-md) {
+				.text-container {
+					h1 {
+						font-size: 35px;
+						padding: 0;
+						margin: 0;
+					}
+					width: 90%;
+					height: auto;
+					top: 550px;
+				}
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				.text-container {
+					h1 {
+						font-size: 25px;
+						padding: 0;
+						margin: 0;
+					}
+					width: 90%;
+					height: auto;
+					padding: 30px 36px;
+					top: 230px;
+				}
+			}
+		}
+
+		.h2-internal {
+			@media screen and (max-width: $breakpoint-masthead-lg) {
+				padding-left: unset;
+			}
+		}
+	}
+
+	#intro {
+		img {
+			vertical-align: top;
+		}
+	}
+
+	#page-quote {
+		.quote-container {
+			position: relative;
+			margin: 0;
+			&:after {
+				content: '';
+				background: url($image-path + 'quotes.svg') no-repeat;
+				position: absolute;
+				z-index: 0;
+				height: 325px;
+				width: 460px;
+				opacity: 0.1;
+				background-size: contain;
+				top: 0;
+				left: 0;
+
+				@media screen and (max-width: $breakpoint-sm) {
+					height: 170px;
+					width: 240px;
+				}
+			}
+			.quote {
+				padding: 0 5rem;
+				z-index: 100;
+
+				p {
+					font-size: 25px;
+					line-height: 1.64;
+				}
+
+				.author {
+					font-size: 20px;
+				}
+
+				@media screen and (max-width: $breakpoint-xl) {
+					padding: $txt-mobile-pad-x;
+				}
+				@media screen and (max-width: $breakpoint-lg) {
+					p {
+						font-size: calc(25px * 0.8);
+					}
+					.author {
+						font-size: calc(20px * 0.8);
+					}
+				}
+			}
+		}
+		.pres-photo {
+			background: url($image-path + 'quote-pic.png') center no-repeat;
+			height: 600px;
+
+			@media screen and (max-width: $breakpoint-md) {
+				background-color: #8ba19f;
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				height: 350px;
+			}
+		}
+	}
+
+	#page-about {
+		.about-container {
+			margin-top: 7rem;
+			@media screen and (max-width: $breakpoint-sm) {
+				margin-top: 2rem;
+			}
+
+			h1 {
+				border: none;
+				color: $blue;
+			}
+		}
+	}
+
+	#page-message {
+		.message-container {
+			.m75-a {
+				@media screen and (max-width: $breakpoint-lg) {
+					margin: calc(75px - 20px) auto !important;
+				}
+			}
+		}
+	}
+
+	//HELPERS
+	.height550 {
+		height: 550px;
+	}
+
+	.height350 {
+		height: 350px;
+	}
+	.min-height260 {
+		min-height: 260px;
+	}
+
+	.background-blue {
+		background-color: $blue;
+	}
+
+	.text-white {
+		color: $white;
+	}
+
+	.text-blue {
+		color: $blue;
+	}
+
+	.img-cover {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position-x: 50%;
+		background-position-y: 50%;
+	}
+
+	.border-box {
+		border: 1px solid $blue;
+	}
+
+	.small-e {
+		font-size: 90% !important;
+	}
+
+	.m120-l {
+		margin-left: 120px;
+	}
+
+	.m-pad {
+		@media screen and (max-width: $breakpoint-sm) {
+			padding: 0 $txt-mobile-pad-x !important;
+		}
+	}
+}

@@ -1,0 +1,197 @@
+.smart-form {
+    border: 1px solid $primary;    
+    padding: 30px;
+    padding-top: 15px;
+    border-radius: 0;
+    width:100%;
+    background-color: $white;    
+    color: $primary;
+
+    h2 {
+        margin: 0px!important;
+    }
+
+    legend {
+        padding-bottom: 0px;
+    }
+
+    label {
+        font-family: 'Roboto Condensed';
+        font-size: 1.3rem!important;
+        margin-bottom: 15px;
+        margin-top: 20px!important;
+
+        span.ms-formvalidation {
+            margin-right: 5px;
+            float:unset;
+        }
+    }
+
+    textarea, input {
+        border-radius: 0px;
+        border-color: $primary;
+    }
+
+    textarea:focus-visible, input:focus-visible {
+        border-radius: 0px;
+        border-color:$primary;
+        border-width: 2px;
+    }
+
+    .smart-messages-container p {
+        font-family: 'Roboto Condensed';
+        font-size: 1.3rem;
+        color: #565656;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+
+    .smart-field-input {
+        
+        input {
+            width: 50%;
+        }
+
+        input[type="text"] {
+            height: 50px;
+        }
+
+         table {
+            margin-left:-5px;
+            margin-top: -8px;
+        }
+
+        .smart-field-description {            
+            margin-bottom: 0px;
+
+            .ms-metadata {
+                font-family: 'Roboto Condensed';
+                font-weight: 400;
+                font-size: 1rem;
+                color: $gray-dark;
+                width: 85%;
+            }
+        }
+
+        .smart-field-description {
+            max-width: 75%;
+        }
+        
+    }
+    
+    .smart-radio {
+        input {
+            margin-top: 8px!important;
+            border-color: $primary;
+            width: 20px!important;
+            padding-left:5px;
+            visibility: hidden;
+        }
+        input[type='radio']:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -4px;
+            left:3px;
+            position: relative;
+            background-color: $white;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 1px solid $primary;
+        }
+
+        input[type='radio']:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -4px;
+            left:3px;
+            position: relative;
+            background-color: $primary;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 1px solid $primary;
+        }
+
+        label {
+            color: $gray-dark;
+            margin-bottom: 0;
+            margin-top: 0!important;
+        }
+
+        tr {
+            padding-right: 30px;
+        }
+    }
+
+    textarea {
+        width: 75%;
+        min-height: 200px;
+        margin-bottom: 0px;
+    }
+
+    .smart-field-button {
+        input {
+            font-family: 'Roboto Condensed';
+            color: $red;
+            font-size: 1.25rem;
+            background-color: $white!important;
+            border: 3px solid $red!important;
+            box-shadow: 5px 5px 0px -1px $red;
+            padding-top: 12px !important;
+            padding-bottom: 12px!important;
+            transition: all 0.2s ease-in;
+            font-weight: 400;
+            margin-top: 2em;
+            margin-bottom: .5em;
+            min-width:unset!important;
+            margin-left: 0px;
+
+            &:hover {
+                color: $white;
+                background-color: $red!important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$breakpoint-md){
+    .smart-form{
+        textarea, input[type='text'] {
+            width:100%!important;
+        }
+
+        .smart-radio {
+            input[type='radio']:after {               
+                top: -6px;
+            }
+    
+            input[type='radio']:checked:after {               
+                top: -6px;
+            }
+        }
+        .smart-field-input .smart-field-description {
+            max-width:unset;
+        }
+
+        .smart-field-input table {
+            margin-left:0px;
+        }
+
+        
+    }
+}
+
+@media screen and (max-width: $breakpoint-xs){
+    .smart-form .smart-radio {
+        input {
+            margin-top: -4px!important;
+        }
+    
+        label {
+            padding-left:10px;
+        }
+    }
+}
