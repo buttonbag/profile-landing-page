@@ -74,7 +74,7 @@ html {
 body div.theme-13th {
   font-size: 1.25rem;
   background: #ffffff;
-  color: black;
+  color: #565656;
   font-family: "DIN Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
@@ -133,7 +133,8 @@ body div.theme-13th {
   }
 }
 .theme-13th h2 {
-  font-size: 25px;
+  text-transform: none;
+  font-weight: 500;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 575.98px) {
@@ -342,8 +343,6 @@ body div.theme-13th {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-position-x: 50%;
-  background-position-y: 50%;
 }
 .theme-13th .border-box {
   border: 1px solid #0057b7;
@@ -971,24 +970,19 @@ footer {
   text-align: center !important;
 }
 
-a.btn, a.cta-blue {
+a.btn {
   font-family: "DIN Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
   padding: 13px 30px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  background: #0057b7 !important;
   border-radius: 10px;
-  color: #ffffff !important;
-}
-a.btn:hover, a.cta-blue:hover {
-  background: #0e4174 !important;
 }
 @media screen and (max-width: 767.98px) {
-  a.btn, a.cta-blue {
+  a.btn {
     font-size: 15px;
     max-width: 260px;
     height: 50px;
@@ -1000,14 +994,29 @@ a.btn:hover, a.cta-blue:hover {
   }
 }
 @media screen and (max-width: 767.98px) {
-  a.btn.mobile-mt, a.cta-blue.mobile-mt {
+  a.btn.mobile-mt {
     margin: 1.5rem auto 0;
   }
+}
+a.btn.btn--blue {
+  background: #0057b7 !important;
+  color: #ffffff !important;
+}
+a.btn.btn--blue:hover {
+  background: #0e4174 !important;
+}
+a.btn.btn--white {
+  background: #ffffff !important;
+  color: #0e4174 !important;
+}
+a.btn.btn--white:hover {
+  background: #0e4174 !important;
+  color: #ffffff !important;
 }
 
 .message-header {
   background: url("/13th-president/PublishingImages/letter-header.png") center/cover no-repeat;
-  height: 550px;
+  height: 350px;
   margin-bottom: -70px;
 }
 

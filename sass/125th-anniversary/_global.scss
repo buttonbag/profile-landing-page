@@ -4,8 +4,7 @@ html {
 body div.theme-13th {
 	font-size: 1.25rem;
 	background: $white;
-	color: black;
-	// color: $gray-dark;
+	color: $gray-dark;
 	font-family: $font-primary;
 	font-weight: 400;
 	-moz-osx-font-smoothing: grayscale; /* Firefox */
@@ -51,7 +50,8 @@ body div.theme-13th {
 		}
 	}
 	h2 {
-		font-size: 25px;
+		text-transform: none;
+		font-weight: 500;
 		margin-bottom: 30px;
 		@media screen and (max-width: $breakpoint-sm) {
 			font-size: calc(25px * 0.8);
@@ -279,8 +279,6 @@ body div.theme-13th {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-position-x: 50%;
-		background-position-y: 50%;
 	}
 
 	.border-box {

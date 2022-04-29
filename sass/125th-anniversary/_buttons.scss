@@ -1,22 +1,14 @@
 a {
-	&.btn,
-	&.cta-blue {
+	&.btn {
 		font-family: $font-heading;
 		font-weight: 700;
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 25px;
 		padding: 13px 30px;
 		align-items: center;
 		text-align: center;
 		text-transform: uppercase;
-
-		background: #0057b7 !important;
 		border-radius: 10px;
-		color: $white !important;
-
-		&:hover {
-			background: $blue-dark !important;
-		}
 
 		@media screen and (max-width: $breakpoint-md) {
 			font-size: 15px;
@@ -32,6 +24,25 @@ a {
 		&.mobile-mt {
 			@media screen and (max-width: $breakpoint-md) {
 				margin: 1.5rem auto 0;
+			}
+		}
+
+		&.btn--blue {
+			background: $blue !important;
+			color: $white !important;
+
+			&:hover {
+				background: $blue-dark !important;
+			}
+		}
+
+		&.btn--white {
+			background: $white !important;
+			color: $blue-dark !important;
+
+			&:hover {
+				background: $blue-dark !important;
+				color: $white !important;
 			}
 		}
 	}
